@@ -18,7 +18,6 @@ const shopping = {
         // shows bought item
         vm.buyItems = (id, obj) => {
             if (vm.currency >= obj.price) {
-                console.log("you have enough money");
                 MainService.buyItems(obj.price);
                 MainService.inventory[id].bought = true;
                 vm.getCart();

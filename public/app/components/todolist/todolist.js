@@ -4,36 +4,14 @@ const todolist = {
     controller: ["$rootScope", "MainService", function ($rootScope, MainService) {
         const vm = this;
         vm.toggle = false;
-        //now receiving broadcast in the service
 
-        //vm.showForm = MainService.getValue();
-
-        // recieves broadcast
+        // recieves form value
         vm.showForm = () => {
-            // $rootScope.$broadcast("showForm", true);
             MainService.setValue(true);
-            //MainService.loadList();
         };
         vm.getValue = () => {
             return MainService.getDisplayValue();  
         }
-
-        // $rootScope.$on("showForm", (event,data) => {
-            
-        //     MainService.setValue(data);
-        //     // value = data;
-        //     // console.log(value);
-        // });
-
-        // $rootScope.$on("hideForm", (event, data) => {     
-        //     console.log("this is working");
-        //     MainService.setValue(data);     
-        //     // value = data;
-        //      console.log(data);
-        // });
-
-        //console.log(value);
-       
 
         // updates tasks from promise
         function updateDaily(result) {

@@ -4,12 +4,11 @@ const submit = {
     controller: ["$rootScope", "MainService", "$route", function ($rootScope, MainService, $route) {
 
         const vm = this;
-        // sends value of false to boardcast
+        // sends value of false to show/hide form
         vm.showForm = true;
         vm.hideForm = () => {
             vm.showForm = false;
             MainService.setValue(vm.showForm);
-            //$rootScope.$broadcast("hideForm", false);
         }
 
         //close and refresh
@@ -35,7 +34,7 @@ const submit = {
             } else if (value === 3) {
                 vm.newTask.importance = 3;
             } else {
-                vm.newTask.importance = 0;
+                vm.newTask.importance = 1;
             };
         }
 
@@ -43,7 +42,6 @@ const submit = {
         vm.addFrequency = (value) => {
             if (value === "daily") {
                 vm.newTask.daily = true;
-                //console.log(vm.newTask.importance);
             }
             else if (value === "weekly") {
                 vm.newTask.weekly = true;
