@@ -1,20 +1,8 @@
 "use strict"
 const intro = {
-    
-    template: `<form>
-    <div class="intro-container">
-    <img class="intro-logo" src="app/images/planimal.svg">
-    <p class="intro-label">Hi Hooman!!! I am here to help you get your tasks completed. The more you complete, the happier I am!  mofffmoff moff mof mof</p>
-    <h2 class="name-pet">Name your pet: </h2>
-    <input class="intro-input" type="text" placeholder="Your pet's name" ng-model= "$ctrl.pet.name">
-    <button class="intro-button" ng-click="$ctrl.closeAndRefresh(); $ctrl.hideIntro(); $ctrl.setName($ctrl.pet)">Lets Play!</button>
-    </div>
-    </form>
-   
-`,
-    //hide intro variable communicating to home
+    templateUrl: "app/components/intro-modal/intro.html",
     bindings: {
-        hideIntro: "&",
+        hideIntro: "&" //hide intro variable communicating to home
     },
 
     controller: ["MainService", "$route", function( MainService, $route){
