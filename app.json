@@ -1,0 +1,5 @@
+{
+    "name": "Planimal",
+    "description": "Gamify adulting by completeing tasks and managing a digital pet",
+    "image": "heroku/nodejs"
+    }
