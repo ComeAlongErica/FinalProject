@@ -27,13 +27,6 @@ function displayDir() {
                 }
             });
 
-            // greys out selection on form on click
-            $element.on("click", () => {
-                if ($element[0].tagName === "BUTTON") {
-                    $element[0].style.backgroundColor = "rgb(187, 187, 187)";
-                }
-            });
-
             // displays dog speech of not enough money when currency is less than item price, removes after 5 seconds
             $element.on("click", () => {
                 if ($element[0].classList[0] === "inventory-item" && $element[0].classList[2] === "not-enough") {
