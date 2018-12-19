@@ -18,3 +18,6 @@ const config = {
     ssl: params.hostname !== "localhost"
 }
 module.exports = new pg.Pool(config);
+
+
+//heroku local web

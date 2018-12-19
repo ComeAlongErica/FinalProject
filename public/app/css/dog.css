@@ -456,18 +456,9 @@ section.funds:after {
       z-index: 80;
       animation: cry 0.5s infinite alternate;
   }
-  .sad.body{
-    height: 250px;
-  }
-  .sad .stomach{
-    height: 50px;
-  }
 
   .sad .shine-left, .sad .shine-right {
     display: none;
-  }
-  .sad .eyes{
-      height: 3vmax;
   }
 
   .sad .eyes:before{
