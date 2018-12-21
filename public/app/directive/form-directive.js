@@ -26,7 +26,7 @@ function formDir() {
                 if ($element[0].tagName === "BUTTON" && $element[0].classList[0] === "high") {
                     $element[0].style.backgroundColor = "rgb(187, 187, 187)";
                     $element[0].previousElementSibling.style.backgroundColor = "";
-                    $element[0].previousElementSibling.previousElementSiblingstyle.backgroundColor = "";
+                    $element[0].previousElementSibling.previousElementSibling.style.backgroundColor = "";
                 }
             });
 
