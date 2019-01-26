@@ -1,8 +1,8 @@
 # planimals-reward-based-todo-list-app
 
-A reward based todo app with a digital pet you must keep happy.
+A reward based todo app with a digital pet you must keep happy by completing your tasks.
 
-Task: Use an API or create a database to create an app to display and manipulate the data in a meaningful way.
+Task: Create a database to build an app to display and manipulate the data in a meaningful way.
 
 - On logging in you name your pet
 - You have three options on the home page, add a task, view tasks, or look at shopping inventory
