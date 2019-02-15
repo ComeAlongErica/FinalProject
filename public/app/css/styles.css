@@ -649,8 +649,9 @@ input {
 }
 
 .inventory-img:hover {
-    max-width: 72%;
-    max-height: 72%;
+    /* max-width: 72%;
+    max-height: 72%; */
+    transform: scale(1.05);
     transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     cursor: pointer;
 }
