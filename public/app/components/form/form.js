@@ -13,15 +13,17 @@ const submit = {
 
         //close and refresh
         vm.closeAndRefresh = () => {
-            $route.reload();
+            setTimeout(function () {
+                $route.reload();
+            }, 50);
         }
 
         // saves new in service
         vm.saveTask = (task) => {
             if (task.daily === true || task.weekly === true || task.todo === true) {
-                MainService.postTodo(task);    
+                MainService.postTodo(task);
             } else {
-                console.log("Task not submitted. Must select task type."); 
+                console.log("Task not submitted. Must select task type.");
             }
         };
 
